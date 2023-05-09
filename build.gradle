@@ -36,6 +36,9 @@ buildscript {
     repositories {
         gradlePluginPortal()
         google()
+//        mavenCentral()
+//        jcenter()
+//        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath "gradle.plugin.com.github.johnrengelman:shadow:8.0.0"
@@ -84,6 +87,9 @@ allprojects {
     repositories {
         mavenCentral()
         google()
+//        mavenCentral()
+//        jcenter()
+//        maven { url "https://jitpack.io" }
     }
 }
 

@@ -39,7 +39,8 @@ progdir=`pwd`
 prog="${progdir}"/`basename "${prog}"`
 cd "${oldwd}"
 
-jarfile=apktool.jar
+jarfile=../../brut.apktool/apktool-cli/build/libs/apktool-cli-all.jar
+
 libdir="$progdir"
 if [ ! -r "$libdir/$jarfile" ]
 then
