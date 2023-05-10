@@ -16,7 +16,10 @@
 import org.apache.tools.ant.filters.*
 
 apply plugin: 'java-library'
-
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
 processResources {
   from('src/main/resources/properties') {
     include '**/*.properties'
@@ -28,6 +31,11 @@ processResources {
     include '**/*.jar'
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
   }
+
+    from('/Users/lucas/Library/Java/JavaVirtualMachines/corretto-1.8.0_302/Contents/Home/') {
+        include '**/*.jar'
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    }
 
   includeEmptyDirs = false
 }
